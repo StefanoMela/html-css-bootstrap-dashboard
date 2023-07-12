@@ -3,26 +3,44 @@
     border: 1px solid red;
 }
 
+.row.bordered {
+
+    border: 10px solid peru;
+}
+
 .debug {
 
     height: 100px;
     border: 1px solid green;
 }
 
-aside {
+.side__nav {
 
-    width: 100px;
+    width: 150px;
     height: calc(100% - 100px);
     background-color: blue;
 }
 
 .main__content {
 
-    width:  calc(100% - 100px);
+    width:  calc(100% - 150px);
     height: calc(100% - 100px);
 }
 
-.main__nav {
 
-    width: calc(100% - 100px);
+@media screen and (max-width: 992px) {
+    
+    .side__nav {
+
+        width: 50px;
+        height: calc(100% - 100px);
+    }
+
+
+.main__content {
+
+    width:  calc(100% - 50px);
 }
+
+}
+
