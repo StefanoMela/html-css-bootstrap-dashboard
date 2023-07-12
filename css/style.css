@@ -4,18 +4,10 @@
     height: calc(100vh - 56px);
 }
 
-.debug {
-
-    height: 100px;
-    border: 1px solid green;
-}
-
-
 
 .side__nav {
 
     width: 150px;
-    height: calc(100vh - 56px);
     background-color: #11283e;
     background-image: url(../img/sidebar-bg.png);
     color: white;
@@ -42,26 +34,18 @@
     #main {
 
         height: calc(100vh - 56px);
-        overflow: auto;
     }
 
 
     .side__nav {
 
         width: 50px;
-        height: calc(100vh - 56px);
-        overflow: auto;
     }
 
 
     .main__content {
 
         width: calc(100% - 50px);
-    }
-
-    .central__nav {
-
-        margin: 0;
     }
 
 }
