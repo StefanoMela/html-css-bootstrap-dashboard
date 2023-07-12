@@ -3,9 +3,9 @@
     border: 1px solid red;
 }
 
-.row.bordered {
+#main {
 
-    border: 10px solid peru;
+    height: calc(100vh - 100px);
 }
 
 .debug {
@@ -17,31 +17,38 @@
 .side__nav {
 
     width: 150px;
-    height: calc(100% - 100px);
-    background-color: blue;
+    height: calc(100vh - 100px);
+    border: 1px solid black;
 }
 
 .main__content {
 
-    width:  calc(100% - 150px);
-    height: calc(100% - 100px);
-    
+    width: calc(100vw - 150px);
+    height: 100%;
 }
 
 
 @media screen and (max-width: 992px) {
-    
+
+
+    #main {
+
+        height: calc(100vh - 100px);
+        overflow: auto;
+    }
+
     .side__nav {
 
         width: 50px;
-        height: calc(100% - 100px);
+        height: calc(100vh - 100px);
     }
 
 
-.main__content {
+    .main__content {
 
-    width:  calc(100% - 50px);
+        width: calc(100% - 50px);
+        height: calc(100vh - 100px);
+        overflow: auto;
+    }
+
 }
-
-}
-
