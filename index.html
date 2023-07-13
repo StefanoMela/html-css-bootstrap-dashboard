@@ -20,66 +20,69 @@
 <body>
 
     <header id="header">
-        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-              </nav>
-        </div>
+            </nav>
     </header>
     <main id="main" class="d-flex">
         <aside class="side__nav d-flex flex-column justify-content-between">
             <div class="top__icons d-flex flex-column align-items-sm-center align-items-lg-start ms-lg-3 mt-3 gap-3">
-                <span class="d-sm-none d-lg-block"><i class="fa-solid fa-play-circle me-2"></i>home</span>
-                <span class="d-sm-none d-lg-block"><i class="fa-solid fa-play-circle me-2"></i>home</span>
-                <span class="d-sm-none d-lg-block"><i class="fa-solid fa-play-circle me-2"></i>home</span>
+                <span class="d-lg-inline"><i class="fa-solid fa-play-circle me-2"></i>home</span>
+                <span class="d-lg-inline"><i class="fa-solid fa-play-circle me-2"></i>home</span>
+                <span class="d-lg-inline"><i class="fa-solid fa-play-circle me-2"></i>home</span>
                 <i class="fa-solid fa-play-circle d-lg-none"></i>
                 <i class="fa-solid fa-play-circle d-lg-none"></i>
                 <i class="fa-solid fa-play-circle d-lg-none"></i>
             </div>
             <div class="bottom__icons d-flex justify-content-sm-center justify-content-lg-start ms-lg-3">
                 <i class="fa-solid fa-play-circle d-lg-none"></i>
-                <span class="d-sm-none d-lg-block"><i class="fa-solid fa-play-circle mb-5 me-2"></i>Admin</span>
+                <span class="d-lg-inline"><i class="fa-solid fa-play-circle mb-5 me-2"></i>Admin</span>
             </div>
         </aside>
         <section class="main__content">
             <div class="central__nav d-flex justify-content-between p-lg-2">
-                <div class="title__pills__top d-flex">
+                <div class="title__badges__top d-flex">
                     <h3>Boolean</h3>
                     <span class="badge bg-primary">Piano Blaze</span>
-                    <div class="title__pills">
+                    <div class="title__badges">
                         <span class="badge bg-primary">3 app</span>
                     </div>
                 </div>
@@ -92,8 +95,8 @@
                     <div class="btn button-primary"></div>
                 </div>
             </div>
-            <div class="row d-flex p-lg-2">
-                <div class="col-sm-12 col-lg-7">
+            <div id="padding_row" class="row d-flex p-lg-2">
+                <div class="col-md-7">
                     <div class="card m-sm-3 mt-5 ">
                         <div class="card-header">
                             Featured
@@ -177,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-5">
+                <div class="col-md-5">
                     <div class="card m-sm-3 mt-5 ">
                         <div class="card-header">
                             Featured
@@ -189,11 +192,12 @@
                         </ul>
                     </div>
                     <div class="card m-sm-3 mt-5">
-                            <img src="./img/stats.jpeg" alt="" class="img-fluid rounded">
+                        <img src="./img/stats.jpeg" alt="" class="img-fluid rounded">
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item h3 border-0">Utenti attivi</li>
-                                <li class="list-group-item pb-4">Lista degli utenti attivi in piattaforma nell'ultimo mese</li>
+                                <li class="list-group-item pb-4">Lista degli utenti attivi in piattaforma nell'ultimo
+                                    mese</li>
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
                                 <li class="list-group-item">A third item</li>

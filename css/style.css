@@ -16,7 +16,6 @@
 .central__nav {
 
     height: 100px;
-    border: 1px solid blue;
     margin-left: var(--bs-gutter-x);
     background-color: #1B72E8;
     color: white;
@@ -25,6 +24,7 @@
 .main__content {
 
     width: calc(100% - 150px);
+
 }
 
 
@@ -48,4 +48,57 @@
         width: calc(100% - 50px);
     }
 
+    .top__icons>span,
+    .bottom__icons>span {
+
+        display: none
+    }
+
 }
+
+
+
+
+@media screen and (max-width: 577px) {
+
+    #main {
+
+        height: calc(100vh - 56px);
+        overflow-x: scroll;
+    }
+
+    .side__nav {
+
+        width: 50px;
+        height: 100%;
+    }
+
+
+    .main__content {
+
+        width: calc(100% - 50px);
+    }
+
+    .top__icons>span,
+    .bottom__icons>span {
+
+        display: none
+    }
+
+    #padding_row {
+
+        padding-inline: 1rem;
+    }
+
+    .side__nav
+     {
+
+        text-align: center;
+    }
+
+    .bottom__icons {
+
+        justify-content: center;
+    }
+
+} 
