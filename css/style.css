@@ -52,6 +52,11 @@ i {
     width: 30px;
 }
 
+.long__row {
+
+    width: 50rem;
+}
+
 .table i {
 
   margin-inline: 1px;

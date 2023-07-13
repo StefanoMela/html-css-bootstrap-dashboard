@@ -21,12 +21,17 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <form class="d-flex w-100 m-auto">
+                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -38,25 +43,15 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                <i class="fa-solid fa-bell text-warning"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -110,7 +105,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="text-muted" colspan="8">Nome</th>
+                                        <th scope="col" class="text-muted">Nome</th>
                                         <th scope="col" class="text-muted">Data Inizio</th>
                                         <th scope="col" class="text-muted">ROI</th>
                                         <th scope="col" class="text-muted">Stato</th>
@@ -119,76 +114,75 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 75</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                            Classe 75
+                                        </td>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 76</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 76</td>
+                                        
                                         <td>16 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 77</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 77</td>
+                                        
                                         <td>17 Feb 2021</td>
                                         <td>20%</td>
-                                        <td><span class="badge rounded-pill text-bg-warning text-white">Process</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><span class="badge rounded-pill text-bg-warning text-white">Process</span>
+                                        </td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 78</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 78</td>
+                                        
                                         <td>18 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 79</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 79</td>
+                                        
                                         <td>19 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 80</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 81</td>
+                                        
                                         <td>20 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 81</td>
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        Classe 82</td>
+                                        
                                         <td>21 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td colspan="7">Classe 82</td>
-                                        <td>22 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="./img/class-avatar.jpg" class="class__avatar" alt=""></th>
-                                        <td>Classe 83</td>
-                                        <td>15 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                                        <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -198,7 +192,7 @@
                         <div class="card-header h5">
                             F.A.Q.
                         </div>
-                        <div class="accordion m-sm-3" id="accordionExample">
+                        <div class="accordion accordion-flush m-sm-3" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -277,15 +271,15 @@
                     </div>
                     <div class="card m-sm-3 mt-5">
                         <div class="card-body">
-                            <ul class="list-group">
+                            <ul class="list-group list-group-flush border rounded">
                                 <li class="list-group-item border-bottom-0"><img src="./img/stats.jpeg" alt=""
                                         class="img-fluid"></li>
                                 <li class="list-group-item h4 border-bottom-0">Utenti attivi</li>
                                 <li class="list-group-item">Lista degli utenti attivi in piattaforma nell'ultimo
                                     mese</li>
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
                                 <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
                             </ul>
                         </div>
@@ -295,9 +289,16 @@
         </section>
     </main>
     <!-- JAVASCRIPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-circle-question"></i>
+<i class="fa-solid fa-ellipsis-vertical"></i>
+<i class="fa-solid fa-bell"></i>
