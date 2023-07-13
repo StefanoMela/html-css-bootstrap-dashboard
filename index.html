@@ -20,7 +20,7 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid px-lg-3">
                 <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,28 +28,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <form class="d-flex w-100 m-auto">
-                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell text-warning"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profilo</a></li>
-                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
+                            <div class="btn-group dropstart">
+                                <button type="button" class="btn btn-secondary dropdown-toggle border-0 text-warning" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-bell"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>                                </ul>
+                              </div>
                         </li>
                     </ul>
                 </div>
@@ -186,7 +191,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="text-muted">Nome</th>
+                                        <th scope="col" class="text-muted w-50">Nome</th>
                                         <th scope="col" class="text-muted">Data Inizio</th>
                                         <th scope="col" class="text-muted">ROI</th>
                                         <th scope="col" class="text-muted">Stato</th>
@@ -195,7 +200,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 75
                                         </td>
@@ -206,7 +211,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 76</td>
 
@@ -217,7 +222,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 77</td>
 
@@ -229,7 +234,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 78</td>
 
@@ -240,7 +245,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 79</td>
 
@@ -251,7 +256,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 81</td>
 
@@ -262,7 +267,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                        <td scope="row"><img src="./img/class-avatar.jpg"
                                                 class="class__avatar" alt="">
                                             Classe 82</td>
 
@@ -383,10 +388,3 @@
 </body>
 
 </html>
-
-
-
-<i class="fa-solid fa-bars"></i>
-<i class="fa-solid fa-circle-question"></i>
-<i class="fa-solid fa-ellipsis-vertical"></i>
-<i class="fa-solid fa-bell"></i>
