@@ -6,9 +6,10 @@
 ***************
 */
 
-offca #main {
+#main {
 
     height: calc(100vh - 56px);
+    overflow: auto;
 }
 
 .side__nav {
@@ -19,9 +20,16 @@ offca #main {
     color: white;
 }
 
-i {
+.top__icons,
+.bottom__icons {
 
     cursor: pointer;
+}
+
+.top__icons>*:hover,
+.bottom__icons>*:hover {
+
+    background-color: rgba(77, 77, 77, 0.75);
 }
 
 .central__nav {
@@ -66,6 +74,10 @@ i {
     padding: 5px;
 }
 
+.table>* {
+
+    cursor: pointer;
+}
 
 .btn.text-warning {
 
