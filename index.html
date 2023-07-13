@@ -92,7 +92,88 @@
                 </div>
                 <div class="add__student pt-lg-2">
                     <span>Nuovo studente</span>
-                    <button type="button" class="btn btn-outline-light">+</button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">+</button>
+                </div>
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" aria-label="First name" required>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="lasttName" class="form-label">Cognome</label>
+                                <input type="text" class="form-control" aria-label="Last name" required>
+                              </div>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="email" class="form-control" id="inputEmail4" required>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Stato</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Italia</option>
+                                <option>Sardegna</option>
+                                <option>Corsica</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">CAP</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputGroupFile02" class="form-label">Foto</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Salva</button>
+                              <button type="reset" class="btn btn-warning">Reset</button>
+                            </div>
+                          </form>
+                    </div>
                 </div>
             </div>
             <div id="padding_row" class="row d-flex p-lg-2">
@@ -114,7 +195,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
                                             Classe 75
                                         </td>
                                         <td>15 Feb 2021</td>
@@ -124,9 +206,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 76</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 76</td>
+
                                         <td>16 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
@@ -134,9 +217,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 77</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 77</td>
+
                                         <td>17 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-warning text-white">Process</span>
@@ -145,9 +229,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 78</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 78</td>
+
                                         <td>18 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
@@ -155,9 +240,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 79</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 79</td>
+
                                         <td>19 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
@@ -165,9 +251,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 81</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 81</td>
+
                                         <td>20 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-success">Done</span></td>
@@ -175,9 +262,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg" class="class__avatar" alt="">
-                                        Classe 82</td>
-                                        
+                                        <td scope="row" class="long__row"><img src="./img/class-avatar.jpg"
+                                                class="class__avatar" alt="">
+                                            Classe 82</td>
+
                                         <td>21 Feb 2021</td>
                                         <td>20%</td>
                                         <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
