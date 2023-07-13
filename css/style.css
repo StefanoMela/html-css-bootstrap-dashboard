@@ -1,8 +1,17 @@
+/* 
+***************
+
+    MY-STYLE
+
+***************
+*/
+
+
+
 #main {
 
     height: calc(100vh - 56px);
 }
-
 
 .side__nav {
 
@@ -10,6 +19,11 @@
     background-color: #11283e;
     background-image: url(../img/sidebar-bg.png);
     color: white;
+}
+
+i {
+
+    cursor: pointer;
 }
 
 .central__nav {
@@ -20,12 +34,31 @@
     color: white;
 }
 
+.central__nav .badge {
+
+    cursor: pointer;
+}
+
 .main__content {
 
     width: calc(100% - 150px);
     height: 100%;
     overflow: auto;
 
+}
+
+.class__avatar {
+
+    width: 30px;
+}
+
+.table i {
+
+  margin-inline: 1px;
+  color: rgb(33 37 41 / 75%);
+  border: 2px solid currentColor;
+  border-radius: 20%;
+  padding: 5px;
 }
 
 /* 
